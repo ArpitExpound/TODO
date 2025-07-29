@@ -1,9 +1,81 @@
-.todo-item {
- display: flex;
- justify-content: space-between;
- margin-bottom: 8px;
+/* Table Styling */
+.to-do-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
-.todo-item p {
- color: #888;
- text-decoration: line-through;
+
+.to-do-list th,
+.to-do-list td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.to-do-list th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.to-do-list td button {
+  margin-right: 5px;
+  padding: 6px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.to-do-list td button:hover {
+  color: #007bff;
+}
+
+/* Input and Add Button */
+.to-do-list input[type="text"] {
+  padding: 8px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.to-do-list .add-button {
+  background-color: #28a745;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.to-do-list .add-button:hover {
+  background-color: #218838;
+}
+
+/* Pagination Styling */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 4px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pagination button:hover {
+  background-color: #e2e6ea;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: rgb(15, 13, 13);
+  font-weight: bold;
+  border-color: #007bff;
 }
