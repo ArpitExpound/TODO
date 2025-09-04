@@ -1,0 +1,32 @@
+/* OrgChartCustom.css */
+
+/* Make nodes fit content instead of stretching */
+.orgchart .oc-node .custom-node {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+/* Add spacing between sibling nodes */
+.orgchart tr.lines td {
+  padding: 0 15px !important;
+}
+
+.orgchart tr.nodes td {
+  padding: 0 15px !important;
+}
+
+/* Keep connecting lines neat */
+.orgchart tr.lines .down {
+  background-color: #000;
+}
+
+.orgchart tr.lines .left,
+.orgchart tr.lines .right {
+  border-color: #000;
+}

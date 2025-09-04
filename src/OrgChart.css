@@ -1,0 +1,24 @@
+import React from 'react';
+import styled from 'styled-components';
+import { Tree, TreeNode } from 'react-organizational-chart';
+ 
+const StyledNode = styled.div`
+  padding: 5px;
+  border-radius: 8px;
+  display: inline-block;
+  border: 1px #FF0000;
+`;
+ 
+const StyledTreeExample = () => (
+  <Tree
+    lineWidth="2px"
+    lineColor="green"
+    lineBorderRadius="10px"
+    label={<StyledNode>Root</StyledNode>}
+  >
+    <TreeNode label={<StyledNode>Child 1</StyledNode>} />
+    <TreeNode label={<StyledNode>Child 2</StyledNode>} />
+  </Tree>
+);
+ 
+export default StyledTreeExample;
